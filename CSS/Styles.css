@@ -1,0 +1,82 @@
+/* -------------All Section---------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    list-style-type: none;
+}
+section{
+    width: 100%;
+    padding-bottom: 3rem;
+    cursor: context-menu;
+}
+div.main-container{
+    padding: 0 15%;
+}
+.main-container .heading{
+    padding: 6rem 0 5rem;
+    text-align: center;
+}
+.main-container .heading h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.main-container .heading h6{
+    font-size: 1.2rem;
+    color: grey;
+}
+.main-container h3{
+    color: grey;
+    font-size: 1.3rem;
+}
+.main-container h3 strong{
+    font-size: 1.1rem;
+    color: rgb(60, 7, 253);
+}
+.main-container p{
+    font-size: 1.1rem;
+    color: gray;
+    margin-bottom: 0;
+}
+.btn{
+    margin-top: 1.8rem;
+    width: 9rem;
+    outline: none;
+    border: none !important;
+    background-color: rgb(174, 0, 255);
+    color: white;
+    padding: 9px !important;
+    border-radius: 20px !important;
+    font-size: 1rem !important;
+    font-weight: bolder !important;
+}
+button.btn:focus{
+    box-shadow: none;
+}
+.btn:hover{
+    background: blueviolet;
+}
+/* -----------Media Query--------------*/
+@media(max-width: 767px){
+    div.main-container{
+        padding: 0 10%;
+    }
+    .main-container .heading{
+        padding: 1.5rem 0 2.5rem;
+    }
+    .main-container .heading h2{
+        font-size: 2.5rem;
+    }
+    .main-container .heading h6{
+        font-size: 1.1rem;
+    }
+}
+@media(max-width: 410px){
+    .main-container .heading h2{
+        font-size: 2rem;
+    }
+    .main-container .heading h6{
+        font-size: 1rem;
+    }
+}

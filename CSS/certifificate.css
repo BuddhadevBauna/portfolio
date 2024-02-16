@@ -1,0 +1,29 @@
+.certificate .main-container .heading{
+    padding-bottom: 1.5rem;
+}
+.certificate div.carousel-item{
+    padding: 0 22% 1.5rem;
+    overflow: hidden;
+}
+.certificate div.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.certificate i{
+    font-size: 2rem;
+    color: hsl(240, 100%, 50%);
+    font-weight: bolder;
+}
+.certificate .carousel-indicators{
+    position: relative;
+}
+.certificate .carousel-indicators li{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: hsl(240, 100%, 50%);
+}
+.certificate .carousel-indicators .active{
+    opacity: .5;
+}

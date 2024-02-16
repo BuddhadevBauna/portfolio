@@ -1,0 +1,47 @@
+/* Theme Change */
+.theme-change{
+    background-color: hsla(250, 8%, 15%, 0.904) !important;
+    color: white !important;
+}
+.theme-change .nav-main{
+    background: hsl(240, 1%, 85%) !important;
+}
+.theme-change h3{
+    color: white !important;
+}
+.theme-change h3 strong{
+    color: #ff0077 !important;
+}
+.theme-change span{
+    color: hsl(240, 1%, 85%);
+}
+.theme-change .info-detail h3{
+    color: hsl(240, 1%, 85%);
+}
+.theme-change .skill-heading{
+    color: black !important;
+}
+.theme-change .skill-title i{
+    color: black;
+}
+.theme-change .skill-info p{
+    color: hsl(240, 1%, 85%) !important;
+}
+.theme-change .skill-info i{
+    color: #03A9F4 !important;
+}
+.theme-change .information-heading{
+    color: white !important;
+}
+.theme-change .information-details{
+    color: hsl(240, 1%, 85%) !important;
+}
+.theme-change .information-icon i{
+    color: #ff0077 !important;
+}
+.theme-change .carousel i{
+    color: hsl(240, 1%, 85%) !important;
+}
+.theme-change .carousel-indicators li{
+    background-color: hsl(240, 1%, 85%) !important;
+}

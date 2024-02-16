@@ -1,0 +1,184 @@
+.project .heading {
+    padding-bottom: 2rem;
+}
+.project-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.project-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.edit-image {
+    position: relative;
+}
+.simon-game {
+    position: relative;
+}
+.transition {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: blueviolet;
+    color: white;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    
+    height: 0; /* Set height to 0 */
+    visibility: hidden; /* Initially hide the element */
+    transition: height 0.4s linear, visibility 0.4s 0s;
+}
+.edit-image:hover .transition,
+.simon-game:hover .transition {
+    height: 100%;/* Expand the height */
+    visibility: visible;/* Make the element visible */
+}
+.transition p {
+    color: white;
+    font-size: 1.2rem;
+}
+.transition i {
+    background-color: white;
+    color: blue;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .project-inner {
+        grid-template-columns: 1fr;
+    }
+    .edit-image {
+        margin: 0 9rem;
+    }
+    .simon-game {
+        margin: 0 9rem;
+    }
+}
+@media (max-width: 700px) {
+    .edit-image {
+        margin: 0 8rem;
+    }
+    .simon-game {
+        margin: 0 8rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .edit-image {
+        margin: 0 7rem;
+    }
+    .simon-game {
+        margin: 0 7rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .edit-image {
+        margin: 0 6rem;
+    }
+    .simon-game {
+        margin: 0 6rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .edit-image {
+        margin: 0 5rem;
+    }
+    .simon-game {
+        margin: 0 5rem;
+    }
+}
+
+@media (min-width: 1100px) {
+    .edit-image {
+        margin-left: 5rem;
+    }
+    .simon-game {
+        margin-right: 5rem;
+    }
+}
+
+@media (min-width: 1250px) {
+    .edit-image {
+        margin-left: 7rem;
+    }
+    .simon-game {
+        margin-right: 7rem;
+    }
+}
+
+@media (min-width: 1350px) {
+    .edit-image {
+        margin-left: 9rem;
+    }
+    .simon-game {
+        margin-right: 9rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .edit-image {
+        margin-left: 10rem;
+    }
+    .simon-game {
+        margin-right: 10rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .certificate div.carousel-item {
+        padding: 0 20% 1.5rem !important;
+    }
+}
+
+@media (max-width: 950px) {
+    .certificate div.carousel-item {
+        padding: 0 16% 1.5rem !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .certificate div.carousel-item {
+        padding: 0 14% 1.5rem !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .certificate div.carousel-item {
+        padding: 0 12% 1.5rem !important;
+    }
+}
+
+@media (max-width: 650px) {
+    #skill .skill-title {
+        max-width: 25rem;
+    }
+}
+@media (max-width: 500px) {
+    #skill .skill-title {
+        max-width: 20rem;
+    }
+    .edit-image {
+        margin: 0 4rem;
+    }
+    .simon-game {
+        margin: 0 4rem;
+    }
+    .certificate div.carousel-item {
+        padding: 0 10% 1.5rem !important;
+    }
+}

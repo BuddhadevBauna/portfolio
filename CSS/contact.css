@@ -1,0 +1,148 @@
+/* ----------------Contact Section------------------- */
+.contact{
+    padding-bottom: 5rem;
+    position: relative;
+}
+.contact .main-container{
+    padding-bottom: 10% !important;
+}
+.contact-form{
+    display: flex;
+}
+.contact-form .contact-information{
+    margin-right: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-information .information-container{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+.contact-information .contact-icon{
+    font-size: 1.7rem;
+    color: blue;
+}
+.contact-information .location{
+    padding-left: 7px;
+}
+.contact-information p.information-heading{
+    color: black;
+    font-weight: 600;
+}
+.contact-information p.information-details{
+    font-size: 0.9rem;
+}
+.contact-form .message-me{
+    width: 100%;
+}
+.form-container{
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+.form-container i{
+    position: absolute;
+    right: 3%;
+    top: 14%;
+    visibility: hidden;
+}
+.form-container small{
+    visibility: hidden;
+    margin-left: 5px;
+}
+.contact-form .form-container input,
+.contact-form .form-container textarea{
+    width: 100%;
+    padding-left: 10px;
+    border-radius: 7px;
+    background-color: hsl(0, 0%, 91%);
+    outline: none;
+    border: none;
+}
+.form-container input{
+    height: 2.5rem;
+    color: black;
+}
+.form-container textarea{
+    padding-top: 10px;
+}
+.message-btn{
+    margin-top: 0;
+    border-radius: 10px !important;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: bolder !important;
+}
+.message-btn:focus{
+    box-shadow: none !important;
+}
+@media(max-width: 767px){
+    .contact-form{
+        flex-wrap: wrap;
+    }
+}
+.form-container.success input,
+.form-container.success textarea{
+    border: solid 2px green;
+}
+.form-container.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.form-container.error input,
+.form-container.error textarea{
+    border: solid 2px red;
+}
+.form-container.error i.fa-circle-exclamation,
+.form-container.error small{
+    visibility: visible;
+    color: red;
+}
+#last-div{
+    margin-bottom: 0;
+}
+#last-div small{
+    position: relative;
+    bottom: 6px;
+}
+
+/* wavy background */
+.custom-shape-divider-bottom-1686629810 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1686629810 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 95px;
+}
+
+.custom-shape-divider-bottom-1686629810 .shape-fill {
+    fill: #AE00FF;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .custom-shape-divider-bottom-1686629810 svg {
+        width: calc(100% + 1.3px);
+        height: 85px;
+    }
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1686629810 svg {
+        width: calc(100% + 1.3px);
+        height: 65px;
+    }
+}

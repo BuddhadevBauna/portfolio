@@ -1,0 +1,230 @@
+/* ------------Skill-------------- */
+.sub-container {
+    display: grid;
+    justify-content: center;
+}
+#skill .skill-title{
+    margin-bottom: 1rem;
+    padding: 0.3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: whitesmoke;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 35rem;
+    max-width: 30rem;
+}
+#skill .skill-title .skill-heading{
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+}
+#skill .skill-container{
+    margin-left: 1rem;
+}
+#skill .skill-info{
+    display: flex;
+    justify-content: space-between;
+}
+#skill .skill-info p{
+    display: flex;
+    align-items: center;
+}
+#skill .skill-info i{
+    margin-right: 5px;
+    color: blue;
+    font-size: 1.5rem;
+}
+#skill .skill-info .percent{
+    font-weight: bold;
+    color: black;
+}
+#skill .bar{
+    width: 100%;
+    height: 7px;
+    position: relative;
+    background-color: bisque;
+    border-radius: 10px;
+    margin-bottom: 28px;
+}
+#skill .bar span{
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    background-color: #ff004f;
+    border-radius: 10px;
+}
+
+/* ---------HTML---------- */
+#skill .bar .html{
+    width: 80%;
+    animation: html 0.5s;
+}
+@keyframes html{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/* ---------CSS---------- */
+#skill .bar .css{
+    width: 75%;
+    animation: cpp 0.5s;
+}
+@keyframes css{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+/* ---------js---------- */
+#skill .bar .js{
+    width: 70%;
+    animation: js 0.5s;
+}
+@keyframes js{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+/* ---------react---------- */
+#skill .bar .react{
+    width: 65%;
+    animation: react 0.5s;
+}
+@keyframes react{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+/* ---------CPP---------- */
+#skill .bar .cpp{
+    width: 80%;
+    animation: cpp 0.5s;
+}
+@keyframes cpp{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+/* ---------Java---------- */
+#skill .bar .java{
+    width: 85%;
+    animation: cpp 0.5s;
+}
+@keyframes java{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 85%;
+    }
+}
+
+/* ---------python---------- */
+#skill .bar .python{
+    width: 50%;
+    animation: python 0.5s;
+}
+@keyframes python{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+/* ---------Express---------- */
+#skill .bar .express{
+    width: 65%;
+    animation: express 0.5s;
+}
+@keyframes express{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+/* ---------MongoDB---------- */
+#skill .bar .mongodb{
+    width: 60%;
+    animation: mongodb 0.5s;
+}
+@keyframes mongodb{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }
+}
+
+/* ---------Mongoose---------- */
+#skill .bar .mongoose{
+    width: 65%;
+    animation: mongoose 0.5s;
+}
+@keyframes mongoose{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%;
+    }
+}
+
+/*--------------------------------*/
+.skill-container.second,
+.skill-container.third{
+    display: none;
+}
+/* Skill Hide */
+.skill-hide{
+    display: none;
+}
+.skill-show {
+    display: initial !important;
+}
+
+
+/*--------------------------------*/
+@media(max-width: 800px){
+    #skill .skill-heading{
+        font-size: 1.38rem !important;
+    }
+    #skill .skill-info p{
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width: 410px){
+    #skill .skill-heading{
+        font-size: 1.2rem !important;
+    }
+    #skill .skill-info p{
+        font-size: 0.9rem !important;
+    }
+}
