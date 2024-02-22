@@ -6,6 +6,11 @@
     background-attachment: fixed;
     height: 100vh;
 }
+@media(max-width : 500px) {
+    #header {
+        background-size: contain;
+    }
+}
 /* Nav Part of Header */
 #header .nav-main{
     width: 100%;
