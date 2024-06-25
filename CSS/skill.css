@@ -141,7 +141,7 @@
 }
 
 /* ---------python---------- */
-#skill .bar .python{
+/* #skill .bar .python{
     width: 50%;
     animation: python 0.5s;
 }
@@ -152,7 +152,7 @@
     100%{
         width: 50%;
     }
-}
+} */
 
 /* ---------Express---------- */
 #skill .bar .express{
