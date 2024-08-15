@@ -1,0 +1,62 @@
+/* ----------------about---------------- */
+.about .info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info .info-img {
+    border-radius: 50%;
+    padding: 0.25rem;
+    background-color: #8B53FF;
+    border: 0.25rem solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 1rem 0.5rem blueviolet;
+}
+.info .info-img img {
+    transform: scaleX(-1);
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.info .info-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.info-detail h3 {
+    font-size: 0.9rem;
+    color: gray;
+    font-weight: 100;
+}
+
+.education h3 {
+    color: blueviolet;
+    font-weight: bold;
+}
+
+.education .education-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+}
+
+.education-grid .label {
+    font-weight: bold;
+}
+
+.education-grid .value {
+    font-size: 0.9rem;
+}
+
+@media(max-width: 767px) {
+    .about .info {
+        flex-direction: column;
+    }
+}

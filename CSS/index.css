@@ -9,3 +9,19 @@
 html {
     font-size: 20px;
 }
+
+.btn {
+    padding: 0.5rem 1rem;
+    background-color: blueviolet;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(129, 4, 247);
+}

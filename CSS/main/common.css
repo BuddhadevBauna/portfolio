@@ -1,0 +1,32 @@
+/* ----------------main---------------- */
+main {
+    margin: 4rem 0;
+}
+
+main section {
+    padding: 0 10%;
+    padding-top: 4rem;
+}
+
+/* common Style */
+.container .heading {
+    padding: 1rem 0 2rem;
+    text-align: center;
+}
+
+.heading h2 {
+    font-size: 2.2rem;
+}
+
+.heading h6 {
+    font-size: 1rem;
+    color: gray;
+}
+
+
+@media(max-width: 767px) {
+    main {
+        margin-top: 0;
+        margin-bottom: 6rem;
+    }
+}

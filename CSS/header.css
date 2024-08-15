@@ -9,6 +9,7 @@ header .nav_container {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 10;
 }
 
 .nav_container .nav_brand {
@@ -45,9 +46,12 @@ header .nav_container {
 
 .nav_item .nav_link {
     color: black;
+    display: flex;
+    flex-direction: column;
 }
 
-.nav_item .nav_link:hover {
+.nav_item .nav_link:hover,
+.nav_item .nav_link.active {
     color: blue;
 }
 
@@ -58,6 +62,20 @@ header .nav_container {
 .nav_link p {
     font-size: 0.9rem;
     font-weight: bold;
+}
+
+.nav_link span {
+    display: inline-block;
+    width: 0;
+    height: 0.2rem;
+    background-color: blue;
+    border-radius: 0.5rem;
+    transition: width 0.5s ease;
+}
+
+.nav_link:hover span,
+.nav_link.active span {
+    width: 100%;
 }
 
 .nav_menu .toggle-buttons {
@@ -96,14 +114,16 @@ header .nav_container {
     }
 
     .nav_item .nav_link {
-        display: flex;
-        flex-direction: column;
         align-items: center;
         gap: 0.2rem;
     }
 
     .nav_link i {
         display: flex;
+    }
+
+    .nav_link span {
+        display: none;
     }
 
     .nav_menu .toggle-buttons {

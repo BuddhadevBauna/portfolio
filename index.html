@@ -7,7 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/header.css">
-    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="./CSS/main/common.css">
+    <link rel="stylesheet" href="./CSS/main/home.css">
+    <link rel="stylesheet" href="./CSS/main/about.css">
+    <link rel="stylesheet" href="./CSS/main/skill.css">
+    <link rel="stylesheet" href="./CSS/main/project.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -18,43 +22,42 @@
 <body>
     <header>
         <nav class="nav_container">
-            <a href="" class="nav_brand">Buddhadev</a>
+            <p class="nav_brand">Buddhadev</p>
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
                         <a href="#" class="nav_link">
                             <i class="fa-solid fa-house nav_icon"></i>
                             <p>Home</p>
+                            <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#about" class="nav_link">
                             <i class="fa-solid fa-user nav_icon"></i>
                             <p>About</p>
+                            <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
                         <a href="#skill" class="nav_link">
                             <i class="fa-solid fa-file-lines nav_icon"></i>
                             <p>Skill</p>
+                            <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#project" class="nav_link">
                             <i class="fa-solid fa-file-lines nav_icon"></i>
                             <p>Project</p>
+                            <span></span>
                         </a>
                     </li>
-                    <!-- <li class="nav_item">
-                        <a href="" class="nav_link">
-                            <i class="fa-solid fa-certificate nav_icon"></i>
-                            <p>Certificate</p>
-                        </a>
-                    </li> -->
                     <li class="nav_item">
                         <a href="" class="nav_link">
                             <i class="fa-solid fa-message nav_icon"></i>
                             <p>Contactme</p>
+                            <span></span>
                         </a>
                     </li>
                 </ul>
@@ -68,7 +71,7 @@
     </header>
     <main>
         <!-- --------------------------Home---------------------------- -->
-        <section class="home">
+        <section class="home" id="home">
             <div class="container">
                 <h3 class="greeting">Hi,</h3>
                 <h1>I am <strong>Buddhadev</strong></h1>
@@ -136,7 +139,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-js"></i>
+                                        <img src="./images/skill/js.svg" alt="js-img" srcset="">
                                         <span>Java Script</span>
                                     </p>
                                     <p class="percent">70%</p>
@@ -148,7 +151,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-java"></i>
+                                        <img src="./images/skill/java.svg" alt="java-img" srcset="">
                                         <span>Java</span>
                                     </p>
                                     <p class="percent">65%</p>
@@ -160,7 +163,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/c.png" alt="cprogram-img">
+                                        <img src="./images/skill/c.svg" alt="c-img">
                                         <span>c programming</span>
                                     </p>
                                     <p class="percent">60%</p>
@@ -180,7 +183,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-html5"></i>
+                                        <img src="./images/skill/html.svg" alt="html-img" srcset="">
                                         <span>HTML</span>
                                     </p>
                                     <p class="percent">70%</p>
@@ -192,7 +195,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-css3-alt"></i>
+                                        <img src="./images/skill/css.svg" alt="css-img" srcset="">
                                         <span>CSS</span>
                                     </p>
                                     <p class="percent">65%</p>
@@ -204,7 +207,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-js"></i>
+                                        <img src="./images/skill/js.svg" alt="js-img" srcset="">
                                         <span>Java Script</span>
                                     </p>
                                     <p class="percent">70%</p>
@@ -216,7 +219,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-react"></i>
+                                        <img src="./images/skill/react.svg" alt="react-img" srcset="">
                                         <span>React.js</span>
                                     </p>
                                     <p class="percent">65%</p>
@@ -236,7 +239,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/express-js.png" alt="express.js-img">
+                                        <img src="./images/skill/expressjs.svg" alt="expressjs-img" srcset="">
                                         <span>Express.js</span>
                                     </p>
                                     <p class="percent">65%</p>
@@ -248,7 +251,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/mongoDB.png">
+                                        <img src="./images/skill/mongodb.svg" alt="mongodb-img" srcset="">
                                         <span>MongoDB</span>
                                     </p>
                                     <p class="percent">60%</p>
@@ -260,7 +263,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/mongoose.png">
+                                        <img src="./images/skill/mongoose.svg" alt="mongoose-img" srcset="">
                                         <span>Mongoose</span>
                                     </p>
                                     <p class="percent">65%</p>
@@ -280,7 +283,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-git-alt"></i>
+                                        <img src="./images/skill/git.svg" alt="git-img" srcset="">
                                         <span>Git</span>
                                     </p>
                                     <p class="percent">60%</p>
@@ -292,7 +295,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <i class="fa-brands fa-github"></i>
+                                        <img src="./images/skill/github.svg" alt="github-img" srcset="">
                                         <span>Github</span>
                                     </p>
                                     <p class="percent">50%</p>
@@ -304,7 +307,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/postman.svg">
+                                        <img src="./images/skill/postman.svg" alt="postman-img" srcset="">
                                         <span>Postman</span>
                                     </p>
                                     <p class="percent">60%</p>
@@ -316,7 +319,7 @@
                             <div>
                                 <div class="skill-info">
                                     <p>
-                                        <img src="./images/skill/vscode.png">
+                                        <img src="./images/skill/vscode.svg" alt="vscode-img" srcset="">
                                         <span>VS Code</span>
                                     </p>
                                     <p class="percent">50%</p>
@@ -330,10 +333,196 @@
                 </div>
             </div>
         </section>
+        <!-- --------------------------Project---------------------------- -->
+        <section id="project" class="project">
+            <div class="container">
+                <div class="heading">
+                    <h2>Project</h2>
+                    <h6>My Project</h6>
+                </div>
+                <div class="carousel-container">
+                    <i id="prev" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="card">
+                            <div class="img">
+                                <img src="./images/project/image-edit.png" alt="image-edit-img">
+                            </div>
+                            <h4>Technologies Used</h4>
+                            <div class="technologies-used">
+                                <div class="tech-item">
+                                    <img src="./images/skill/html.svg" alt="HTML">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/css.svg" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/js.svg" alt="JavaScript">
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <h4>Tools Used</h4>
+                            <div class="tools-used">
+                                <div class="tool-item">
+                                    <img src="./images/skill/vscode.svg" alt="VSCode">
+                                    <p>VS Code</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/git.svg" alt="Git">
+                                    <p>Git</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/github.svg" alt="GitHub">
+                                    <p>GitHub</p>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <p>Edit Image</p>
+                                <p>
+                                    A versatile platform to effortlessly resize, compress, rotate,
+                                    and mirror your images. Quick and professional results, every time.
+                                    Designed with a responsive UI for seamless experiences on all devices.
+                                </p>
+                                <a href="https://buddhadevbauna.github.io/EditImage/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./images/project/e-commerce.png" alt="e-commerce-img">
+                            </div>
+                            <h4>Technologies Used</h4>
+                            <div class="technologies-used">
+                                <div class="tech-item">
+                                    <img src="./images/skill/html.svg" alt="HTML">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/css.svg" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/js.svg" alt="JavaScript">
+                                    <p>JavaScript</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/react.svg" alt="react.Js">
+                                    <p>React.Js</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/redux-toolkit.svg" alt="redux-toolkit">
+                                    <p>Redux-Toolkit</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/expressjs.svg" alt="expressjs">
+                                    <p>ExpressJs</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/jwt.svg" alt="JWT">
+                                    <p>JWT</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/mongodb.svg" alt="MongoDB">
+                                    <p>MongoDB</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images//skill/mongoose.svg" alt="Mongoose">
+                                    <p>Mongoose</p>
+                                </div>
+                            </div>
+                            <h4>Tools Used</h4>
+                            <div class="tools-used">
+                                <div class="tool-item">
+                                    <img src="./images/skill/vscode.svg" alt="VSCode">
+                                    <p>VS Code</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/npm.svg" alt="npmjs">
+                                    <p>npmjs</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/postman.svg" alt="Postman">
+                                    <p>Postman</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/git.svg" alt="Git">
+                                    <p>Git</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/github.svg" alt="GitHub">
+                                    <p>GitHub</p>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <p>Ecommerce Appliction</p>
+                                <p>
+                                    An online shopping platform with features like product filtering, sorting, cart
+                                    management, and secure checkout. Designed with a beautiful User Inteface(UI).
+                                </p>
+                                <a href="https://github.com/BuddhadevBauna/e-shop-pro" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card">
+                            <div class="img">
+                                <img src="./images/project/carousel.png" alt="carousel-img">
+                            </div>
+                            <h4>Technologies Used</h4>
+                            <div class="technologies-used">
+                                <div class="tech-item">
+                                    <img src="./images/skill/html.svg" alt="HTML">
+                                    <p>HTML</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/css.svg" alt="CSS">
+                                    <p>CSS</p>
+                                </div>
+                                <div class="tech-item">
+                                    <img src="./images/skill/js.svg" alt="JavaScript">
+                                    <p>JavaScript</p>
+                                </div>
+                            </div>
+                            <h4>Tools Used</h4>
+                            <div class="tools-used">
+                                <div class="tool-item">
+                                    <img src="./images/skill/vscode.svg" alt="VSCode">
+                                    <p>VS Code</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/git.svg" alt="Git">
+                                    <p>Git</p>
+                                </div>
+                                <div class="tool-item">
+                                    <img src="./images/skill/github.svg" alt="GitHub">
+                                    <p>GitHub</p>
+                                </div>
+                            </div>
+                            <div class="information">
+                                <p>Carousel</p>
+                                <p>
+                                    An interactive and customizable carousel slider with features like auto-scroll,
+                                    infinite Scroll, and designed with a responsive UI for seamless experiences on all devices.
+                                </p>
+                                <a href="https://buddhadevbauna.github.io/slider/" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <i id="next" class="fa-solid fa-angle-right"></i>
+                </div>
+            </div>
+        </section>
+        
     </main>
     <footer></footer>
+    <script src="./Javascript/header/top-navbar.js"></script>
     <script src="./Javascript/header/bottom-navabr.js"></script>
     <script src="./Javascript/body/skill.js"></script>
+    <script src="./Javascript/body/slider.js"></script>
 </body>
 
 </html>
