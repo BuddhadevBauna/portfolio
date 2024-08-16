@@ -31,3 +31,27 @@ carousel.addEventListener('scroll', updateSliderButtonState);
 
 // Initial update for button state
 updateSliderButtonState();
+
+
+
+const showInformationButtons = document.querySelectorAll('.card .btn');
+const informations = document.querySelectorAll('.card .information');
+
+showInformationButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        if(!informations[index].classList.contains('view')) {
+            showInformationButtons[index].style.transition = 'none';
+            button.style.visibility = 'hidden';
+            informations[index].classList.add('view');
+        } 
+    });
+});
+
+document.querySelectorAll('.information > i')
+.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        showInformationButtons[index].style.transition = 'visibility 0ms ease  0.3s'
+        informations[index].classList.remove('view');
+        showInformationButtons[index].style.visibility = 'visible';
+    });
+});

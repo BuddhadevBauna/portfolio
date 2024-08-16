@@ -37,7 +37,6 @@
     padding: 0.5rem;
     user-select: none;
     box-shadow: 0 0 0.2rem #f7f7f7;
-    cursor: pointer;
     position: relative;
 
     /* centre  the card when scrolling */
@@ -62,33 +61,88 @@
     color: rgb(56, 53, 53);
 }
 
+.card .skill-used {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    column-gap: 1rem;
+    row-gap: 0.5rem;
+    padding-bottom: 2.6rem;
+}
+
+.skill-used h4:first-child {
+    order: 1;
+}
+
+.skill-used h4:last-child {
+    order: 2;
+}
+
+.card .technologies-used {
+    order: 3;
+    border-right: 0.2rem solid blueviolet;
+    padding-right: 1rem;
+}
+
+.card .tools-used {
+    order: 4;
+}
+
 .card .technologies-used,
 .card .tools-used {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    white-space: nowrap;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(3.2rem, 1fr));
+    gap: 0.5rem;
 }
 
 .technologies-used .tech-item,
 .tools-used .tool-item {
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 2rem;
+    border: 0.1rem solid gray;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
-.technologies-used img,
-.tools-used img {
-    width: 1.3rem;
+.tech-item img,
+.tool-item img {
+    height: 85%;
+    max-width: 3rem;
 }
 
-.technologies-used p,
-.tools-used p {
+.tech-item p,
+.tool-item p {
     font-size: 1rem;
-    color: gray;
+    padding: 0.3rem 0.7rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    white-space: nowrap;
+    height: 1.6rem;
+    position: absolute;
+    top: -100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s, visibility 0.3s ease;
+}
+
+.tech-item p::after,
+.tool-item p::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0.3rem solid;
+    border-color: blue transparent transparent;
+}
+
+.tech-item:hover p,
+.tool-item:hover p {
+    visibility: visible;
+    opacity: 1;
 }
 
 .card .information {
@@ -112,8 +166,12 @@
     transition: height 0.5s;
 }
 
-.card:hover .information {
+.information.view {
     height: 100%;
+}
+
+.card .btn {
+    transition: background-color 0.5s ease 0.2s, color 1s ease 0.2s;
 }
 
 .information p {
@@ -121,7 +179,7 @@
     text-align: center;
 }
 
-.information i {
+.information a i {
     background-color: #fff;
     color: blue;
     padding: 0.5rem;
@@ -132,9 +190,30 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.information i:hover {
+.information a i:hover {
     transform: scale(1.1);
     box-shadow: 0 0 0.2rem 0.2rem #bebaba;
+}
+
+.information > i {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.card .btn {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    background-color: rgba(50, 150, 255, 0.8);
+}
+
+.card .btn:hover {
+    background-color: rgba(55, 135, 221, 0.8);
 }
 
 .carousel-container i#prev,
