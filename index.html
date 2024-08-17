@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./CSS/main/about.css">
     <link rel="stylesheet" href="./CSS/main/skill.css">
     <link rel="stylesheet" href="./CSS/main/project.css">
+    <link rel="stylesheet" href="./CSS/main/contact.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -54,14 +55,14 @@
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="" class="nav_link">
+                        <a href="#contact" class="nav_link">
                             <i class="fa-solid fa-message nav_icon"></i>
                             <p>Contactme</p>
                             <span></span>
                         </a>
                     </li>
                 </ul>
-                <i class="fa-solid fa-moon theme_customization"></i>
+                <!-- <i class="fa-solid fa-moon theme_customization"></i> -->
                 <div class="toggle-buttons">
                     <i class="fa-solid fa-table-cells open-btn"></i>
                     <i class="fa-solid fa-xmark close-btn"></i>
@@ -76,10 +77,27 @@
                 <h3 class="greeting">Hi,</h3>
                 <h1>I am <strong>Buddhadev</strong></h1>
                 <em>a passionate programmer specializing in web development.</em>
-                <button class="btn contact-btn">
-                    <span>Contact Me</span>
-                    <i class="fa-solid fa-address-book"></i>
-                </button>
+                <div class="contact-and-cv">
+                    <button class="btn contact-btn">
+                        <span>Contact Me</span>
+                        <i class="fa-solid fa-address-book"></i>
+                    </button>
+                    <a class="btn cv-btn" href="https://drive.google.com/uc?export=download&id=1ahvfe2vsNGUylGyFZnm2nY5czqkegrgy">
+                        <span>Download CV</span> 
+                        <i class="fa-solid fa-download"></i>
+                    </a>
+                </div>
+                <div class="activity-btns">
+                    <a href="https://github.com/BuddhadevBauna" target="_blank">
+                        <img src="./images/activity/github.svg" alt="github" srcset="">
+                    </a>
+                    <a href="https://leetcode.com/u/buddhadev-cse/" target="_blank">
+                        <img src="./images/activity/leetcode.svg" alt="leetcode" srcset="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/buddhadev-bauna/" target="_blank">
+                        <img src="./images/activity/linkedin.svg" alt="linkedin" srcset="">
+                    </a>
+                </div>
             </div>
         </section>
         <!-- --------------------------About---------------------------- -->
@@ -529,13 +547,90 @@
                 </div>
             </div>
         </section>
-
+        <!-- --------------------------Contact---------------------------- -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="heading">
+                    <h2>Contact Me</h2>
+                    <h6>Get in touch</h6>
+                </div>
+                <div class="contact-form">
+                    <div class="contact-information">
+                        <div class="information-container">
+                            <div class="information-icon">
+                                <img src="./images/contact/location.svg" style="width: 1.5rem;" alt="location-img" srcset="">
+                            </div>
+                            <div class="information-details">
+                                <p class="information-heading">Location</p>
+                                <p class="information-description">Paschim medinipur-Pingla-721160(Pin Code)</p>
+                            </div>
+                        </div>
+                        <div class="information-container">
+                            <div class="information-icon">
+                                <img src="./images/contact/call.svg" style="width: 1.5rem;" alt="call-img" srcset="">
+                            </div>
+                            <div class="information-details">
+                                <p class="information-heading">Call Me</p>
+                                <p class="information-description">9883076596</p>
+                            </div>
+                        </div>
+                        <div class="information-container">
+                            <div class="information-icon">
+                                <img src="./images/contact/mail.svg" style="width: 1.5rem;" alt="mail-img" srcset="">
+                            </div>
+                            <div class="information-details">
+                                <p class="information-heading">Email</p>
+                                <p class="information-description">baunabuddhadev2001@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="message-me">
+                        <form action="">
+                            <div class="form-container">
+                                <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="off" required>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error Msg</small>
+                            </div>
+                            <div class="form-container">
+                                <input type="email" name="email" id="email" placeholder="Your Email..." autocomplete="off" required>
+                                <i class="fa-solid fa-circle-check"></i>
+                                <i class="fa-solid fa-circle-exclamation"></i>
+                                <small>Error Msg</small>
+                            </div>
+                            <div id="last-div" class="form-container">
+                                <textarea name="message" id="message" cols="10" rows="3" placeholder="How Can I Help You?... " required></textarea>
+                                <small>Error Msg</small>
+                            </div>
+                            <input type="submit" value="Send Message" class="btn message-btn" name="">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer></footer>
+    <footer>
+        <p>Buddhadev Bauna © 2024</p>
+        <div class="activity-btns">
+            <a href="https://github.com/BuddhadevBauna" target="_blank">
+                <img src="./images/activity/github.svg" alt="github" srcset="">
+            </a>
+            <a href="https://leetcode.com/u/buddhadev-cse/" target="_blank">
+                <img src="./images/activity/leetcode.svg" alt="leetcode" srcset="">
+            </a>
+            <a href="https://www.linkedin.com/in/buddhadev-bauna/" target="_blank">
+                <img src="./images/activity/linkedin.svg" alt="linkedin" srcset="">
+            </a>
+        </div>
+    </footer>
     <script src="./Javascript/header/top-navbar.js"></script>
     <script src="./Javascript/header/bottom-navabr.js"></script>
+    <script src="./Javascript/body/navigate-contact.js"></script>
     <script src="./Javascript/body/skill.js"></script>
     <script src="./Javascript/body/slider.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./Javascript/body/contact.js"></script>
 </body>
 
 </html>

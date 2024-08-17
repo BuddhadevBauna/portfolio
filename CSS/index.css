@@ -20,9 +20,31 @@ html {
     border: none;
     outline: none;
     border-radius: 0.5rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.15rem;
     cursor: pointer;
 }
 
 .btn:hover {
     background-color: rgb(129, 4, 247);
+}
+
+.activity-btns a {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #f5f6fa;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.05rem 0.15rem 0.1rem 0.1rem #dcdde1;
+}
+
+.activity-btns img {
+    width: 1rem;
+    transition: transform 0.3s linear;
+}
+
+.activity-btns a:hover img {
+    transform: scale(1.2);
 }

@@ -1,0 +1,115 @@
+/* ----------------Contact Section------------------- */
+.container .contact-form{
+    display: flex;
+    gap: 3rem;
+}
+
+.contact-form .contact-information{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-information .information-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* .information-icon .contact-icon{
+    font-size: 1.7rem;
+    color: blue;
+} */
+
+.information-details p.information-heading{
+    color: black;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.information-details p.information-description{
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.contact-form .message-me{
+    width: 100%;
+}
+
+.message-me form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.form-container{
+    position: relative;
+}
+
+.form-container i{
+    position: absolute;
+    right: 3%;
+    top: 14%;
+    visibility: hidden;
+}
+
+.form-container small{
+    visibility: hidden;
+    margin-left: 5px;
+}
+
+.form-container input,
+.form-container textarea{
+    width: 100%;
+    padding-left: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: hsl(0, 0%, 91%);
+    outline: none;
+    border: none;
+}
+
+.form-container input{
+    height: 2.5rem;
+    color: black;
+}
+
+.form-container textarea{
+    padding-top: 10px;
+}
+
+.message-btn{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: bolder;
+}
+
+@media(max-width: 900px){
+    .contact-form{
+        flex-wrap: wrap;
+    }
+}
+
+.form-container.success input,
+.form-container.success textarea{
+    border: solid 2px green;
+}
+.form-container.success i.fa-circle-check{
+    visibility: visible;
+    color: green;
+}
+.form-container.error input,
+.form-container.error textarea{
+    border: solid 2px red;
+}
+.form-container.error i.fa-circle-exclamation,
+.form-container.error small{
+    visibility: visible;
+    color: red;
+}
+#last-div{
+    margin-bottom: 0;
+}
+#last-div small{
+    position: relative;
+    bottom: 6px;
+}

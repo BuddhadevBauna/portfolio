@@ -1,0 +1,29 @@
+footer {
+    padding: 1rem 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: whitesmoke;
+}
+
+footer p {
+    font-weight: bold;
+    color: gray;
+}
+
+footer .activity-btns {
+    display: flex;
+    gap: 1rem;
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding-bottom: 5rem;
+        background-color: rgb(208, 21, 255);
+    }
+
+    footer p {
+        color: white;
+    }
+}
