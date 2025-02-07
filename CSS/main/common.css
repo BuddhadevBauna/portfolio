@@ -1,16 +1,15 @@
 /* ----------------main---------------- */
 main {
-    margin: 4rem 0;
+    margin: 4rem 0 7rem;
 }
 
 main section {
-    padding: 0 10%;
-    padding-top: 4rem;
+    padding: 2rem 10%;
 }
 
 /* common Style */
 .container .heading {
-    padding: 1rem 0 2rem;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
@@ -26,11 +25,6 @@ main section {
 
 @media(max-width: 767px) {
     main {
-        margin-top: 0;
-        margin-bottom: 6rem;
-    }
-
-    main section {
-        padding-top: 0;
+        margin: 0;
     }
 }

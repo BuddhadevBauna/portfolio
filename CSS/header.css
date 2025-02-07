@@ -62,6 +62,7 @@ header .nav_container {
 .nav_link p {
     font-size: 0.9rem;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .nav_link span {

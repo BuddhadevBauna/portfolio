@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./CSS/index.css">
     <link rel="stylesheet" href="./CSS/header.css">
     <link rel="stylesheet" href="./CSS/main/common.css">
     <link rel="stylesheet" href="./CSS/main/home.css">
-    <link rel="stylesheet" href="./CSS/main/about.css">
     <link rel="stylesheet" href="./CSS/main/skill.css">
     <link rel="stylesheet" href="./CSS/main/project.css">
     <link rel="stylesheet" href="./CSS/main/contact.css">
@@ -27,37 +26,37 @@
             <div class="nav_menu">
                 <ul class="nav_list">
                     <li class="nav_item">
-                        <a href="#" class="nav_link">
+                        <a href="" class="nav_link">
                             <i class="fa-solid fa-house nav_icon"></i>
-                            <p>Home</p>
+                            <p>home</p>
                             <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#about" class="nav_link">
+                        <a href="/HTML/about.html" class="nav_link">
                             <i class="fa-solid fa-user nav_icon"></i>
-                            <p>About</p>
+                            <p>about</p>
                             <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#skill" class="nav_link">
+                        <a href="/HTML/skill.html" class="nav_link">
                             <i class="fa-solid fa-file-lines nav_icon"></i>
-                            <p>Skill</p>
+                            <p>skill</p>
                             <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#project" class="nav_link">
+                        <a href="/HTML/project.html" class="nav_link">
                             <i class="fa-solid fa-file-lines nav_icon"></i>
-                            <p>Project</p>
+                            <p>project</p>
                             <span></span>
                         </a>
                     </li>
                     <li class="nav_item">
-                        <a href="#contact" class="nav_link">
+                        <a href="/HTML/contact.html" class="nav_link">
                             <i class="fa-solid fa-message nav_icon"></i>
-                            <p>Contactme</p>
+                            <p>contactme</p>
                             <span></span>
                         </a>
                     </li>
@@ -71,23 +70,8 @@
         </nav>
     </header>
     <main>
-        <!-- --------------------------Home---------------------------- -->
         <section class="home" id="home">
             <div class="container">
-                <h3 class="greeting">Hi,</h3>
-                <h1>I am <strong>Buddhadev</strong></h1>
-                <em>a passionate programmer specializing in web development.</em>
-                <div class="contact-and-cv">
-                    <button class="btn contact-btn">
-                        <span>Contact Me</span>
-                        <i class="fa-solid fa-address-book"></i>
-                    </button>
-                    <!-- https://drive.google.com/file/d/1D8YlBOxf_fso-vI7HY-EOgJcArGxD6on/view?usp=sharing -->
-                    <a class="btn cv-btn" href="https://drive.google.com/uc?export=download&id=1D8YlBOxf_fso-vI7HY-EOgJcArGxD6on">
-                        <span>Download CV</span> 
-                        <i class="fa-solid fa-download"></i>
-                    </a>
-                </div>
                 <div class="activity-btns">
                     <a href="https://github.com/BuddhadevBauna" target="_blank">
                         <img src="./images/activity/github.svg" alt="github" srcset="">
@@ -99,512 +83,22 @@
                         <img src="./images/activity/linkedin.svg" alt="linkedin" srcset="">
                     </a>
                 </div>
-            </div>
-        </section>
-        <!-- --------------------------About---------------------------- -->
-        <section id="about" class="about">
-            <div class="container">
-                <div class="heading">
-                    <h2>About Me</h2>
-                    <h6>My Introduction</h6>
-                </div>
-                <div class="info">
-                    <div class="info-img">
-                        <img src="./images/my-image/image.png" alt="">
-                    </div>
-                    <div class="info-detail">
-                        <h3>I am a dedicated and passionate software developer with a strong foundation in Computer
-                            Science.
-                            Over the course of my studies, I have developed expertise in various programming languages
-                            and
-                            gained hands-on experience with the MERN stack. I am eager to apply my skills in real-world
-                            projects
-                            and continue growing in the field of technology.
-                        </h3>
-                        <div class="education">
-                            <h3>Education :</h3>
-                            <div class="education-grid">
-                                <div class="label">Course</div>
-                                <div class="label">Marks</div>
-                                <div class="label">Year</div>
-                                <!-- ------- -->
-                                <div class="value">B.Tech (CSE)</div>
-                                <div class="value">CGPA - 8.48</div>
-                                <div class="value">2020 - 2024</div>
-                                <!-- ------- -->
-                                <div class="value">XII (Science)</div>
-                                <div class="value">Percentage - 82</div>
-                                <div class="value">2019 - 2020</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------Skill---------------------------- -->
-        <section id="skill" class="skill">
-            <div class="container">
-                <div class="heading">
-                    <h2>Skills</h2>
-                    <h6>My Technical Skill</h6>
-                </div>
-                <div class="main-container">
-                    <div class="sub-container">
-                        <div class="skill-title">
-                            <p>Programming Languages</p>
-                            <i class="fa-solid fa-caret-up"></i>
-                        </div>
-                        <div class="skill-container">
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/js.svg" alt="js-img" srcset="">
-                                        <span>Java Script</span>
-                                    </p>
-                                    <p class="percent">70%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="js"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/java.svg" alt="java-img" srcset="">
-                                        <span>Java</span>
-                                    </p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="java"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/c.svg" alt="c-img">
-                                        <span>c programming</span>
-                                    </p>
-                                    <p class="percent">60%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="cpp"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="skill-title">
-                            <p>Frontend development</p>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <div class="skill-container">
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/html.svg" alt="html-img" srcset="">
-                                        <span>HTML</span>
-                                    </p>
-                                    <p class="percent">70%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="html"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/css.svg" alt="css-img" srcset="">
-                                        <span>CSS</span>
-                                    </p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="css"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/js.svg" alt="js-img" srcset="">
-                                        <span>Java Script</span>
-                                    </p>
-                                    <p class="percent">70%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="js"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/react.svg" alt="react-img" srcset="">
-                                        <span>React.js</span>
-                                    </p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="react"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="skill-title">
-                            <p>Backend development</p>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <div class="skill-container">
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/expressjs.svg" alt="expressjs-img" srcset="">
-                                        <span>Express.js</span>
-                                    </p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="express"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/mongodb.svg" alt="mongodb-img" srcset="">
-                                        <span>MongoDB</span>
-                                    </p>
-                                    <p class="percent">60%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="mongodb"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/mongoose.svg" alt="mongoose-img" srcset="">
-                                        <span>Mongoose</span>
-                                    </p>
-                                    <p class="percent">65%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="mongoose"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="sub-container">
-                        <div class="skill-title">
-                            <p>Tools</p>
-                            <i class="fa-solid fa-caret-down"></i>
-                        </div>
-                        <div class="skill-container">
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/git.svg" alt="git-img" srcset="">
-                                        <span>Git</span>
-                                    </p>
-                                    <p class="percent">60%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="git"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/github.svg" alt="github-img" srcset="">
-                                        <span>Github</span>
-                                    </p>
-                                    <p class="percent">50%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="github"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/postman.svg" alt="postman-img" srcset="">
-                                        <span>Postman</span>
-                                    </p>
-                                    <p class="percent">60%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="postman"></span>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="skill-info">
-                                    <p>
-                                        <img src="./images/skill/vscode.svg" alt="vscode-img" srcset="">
-                                        <span>VS Code</span>
-                                    </p>
-                                    <p class="percent">50%</p>
-                                </div>
-                                <div class="bar">
-                                    <span class="vscode"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------Project---------------------------- -->
-        <section id="project" class="project">
-            <div class="container">
-                <div class="heading">
-                    <h2>Project</h2>
-                    <h6>My Project</h6>
-                </div>
-                <div class="carousel-container">
-                    <i id="prev" class="fa-solid fa-angle-left"></i>
-                    <ul class="carousel">
-                        <li class="card">
-                            <div class="img">
-                                <img src="./images/project/image-edit.png" alt="image-edit-img">
-                            </div>
-                            <div class="skill-used">
-                                <h4>Technologies Used</h4>
-                                <div class="technologies-used">
-                                    <div class="tech-item">
-                                        <img src="./images/skill/html.svg" alt="HTML">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/css.svg" alt="CSS">
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/js.svg" alt="JavaScript">
-                                        <p>JavaScript</p>
-                                    </div>
-                                </div>
-                                <h4>Tools Used</h4>
-                                <div class="tools-used">
-                                    <div class="tool-item">
-                                        <img src="./images/skill/vscode.svg" alt="VSCode">
-                                        <p>VS Code</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/git.svg" alt="Git">
-                                        <p>Git</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/github.svg" alt="GitHub">
-                                        <p>GitHub</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="information">
-                                <p>Edit Image</p>
-                                <p>
-                                    A versatile platform to effortlessly resize, compress, rotate,
-                                    and mirror your images. Quick and professional results, every time.
-                                    Designed with a responsive UI for seamless experiences on all devices.
-                                </p>
-                                <a href="https://buddhadevbauna.github.io/EditImage/" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </div>
-                            <button class="btn">More Information</button>
-                        </li>
-                        <li class="card">
-                            <div class="img">
-                                <img src="./images/project/e-commerce.png" alt="e-commerce-img">
-                            </div>
-                            <div class="skill-used">
-                                <h4>Technologies Used</h4>
-                                <div class="technologies-used">
-                                    <div class="tech-item">
-                                        <img src="./images/skill/html.svg" alt="HTML">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/css.svg" alt="CSS">
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/js.svg" alt="JavaScript">
-                                        <p>JavaScript</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/react.svg" alt="react.Js">
-                                        <p>React.Js</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/redux-toolkit.svg" alt="redux-toolkit">
-                                        <p>Redux-Toolkit</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/expressjs.svg" alt="expressjs">
-                                        <p>ExpressJs</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/jwt.svg" alt="JWT">
-                                        <p>JWT</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/mongodb.svg" alt="MongoDB">
-                                        <p>MongoDB</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images//skill/mongoose.svg" alt="Mongoose">
-                                        <p>Mongoose</p>
-                                    </div>
-                                </div>
-                                <h4>Tools Used</h4>
-                                <div class="tools-used">
-                                    <div class="tool-item">
-                                        <img src="./images/skill/vscode.svg" alt="VSCode">
-                                        <p>VS Code</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/npm.svg" alt="npmjs">
-                                        <p>npmjs</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/postman.svg" alt="Postman">
-                                        <p>Postman</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/git.svg" alt="Git">
-                                        <p>Git</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/github.svg" alt="GitHub">
-                                        <p>GitHub</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="information">
-                                <p>Ecommerce Appliction</p>
-                                <p>
-                                    An online shopping platform with features like product filtering, sorting, cart
-                                    management, and secure checkout. Designed with a beautiful User Inteface(UI).
-                                </p>
-                                <a href="https://github.com/BuddhadevBauna/e-shop-pro" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </div>
-                            <button class="btn">More Information</button>
-                        </li>
-                        <li class="card">
-                            <div class="img">
-                                <img src="./images/project/carousel.png" alt="carousel-img">
-                            </div>
-                            <div class="skill-used">
-                                <h4>Technologies Used</h4>
-                                <div class="technologies-used">
-                                    <div class="tech-item">
-                                        <img src="./images/skill/html.svg" alt="HTML">
-                                        <p>HTML</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/css.svg" alt="CSS">
-                                        <p>CSS</p>
-                                    </div>
-                                    <div class="tech-item">
-                                        <img src="./images/skill/js.svg" alt="JavaScript">
-                                        <p>JavaScript</p>
-                                    </div>
-                                </div>
-                                <h4>Tools Used</h4>
-                                <div class="tools-used">
-                                    <div class="tool-item">
-                                        <img src="./images/skill/vscode.svg" alt="VSCode">
-                                        <p>VS Code</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/git.svg" alt="Git">
-                                        <p>Git</p>
-                                    </div>
-                                    <div class="tool-item">
-                                        <img src="./images/skill/github.svg" alt="GitHub">
-                                        <p>GitHub</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="information">
-                                <p>Carousel</p>
-                                <p>
-                                    An interactive and customizable carousel slider with features like auto-scroll,
-                                    infinite Scroll, and designed with a responsive UI for seamless experiences on all
-                                    devices.
-                                </p>
-                                <a href="https://buddhadevbauna.github.io/slider/" target="_blank">
-                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                </a>
-                                <i class="fa-solid fa-circle-xmark"></i>
-                            </div>
-                            <button class="btn">More Information</button>
-                        </li>
-                    </ul>
-                    <i id="next" class="fa-solid fa-angle-right"></i>
-                </div>
-            </div>
-        </section>
-        <!-- --------------------------Contact---------------------------- -->
-        <section id="contact" class="contact">
-            <div class="container">
-                <div class="heading">
-                    <h2>Contact Me</h2>
-                    <h6>Get in touch</h6>
-                </div>
-                <div class="contact-form">
-                    <div class="contact-information">
-                        <div class="information-container">
-                            <div class="information-icon">
-                                <img src="./images/contact/location.svg" style="width: 1.5rem;" alt="location-img" srcset="">
-                            </div>
-                            <div class="information-details">
-                                <p class="information-heading">Location</p>
-                                <p class="information-description">Paschim medinipur-Pingla-721160(Pin Code)</p>
-                            </div>
-                        </div>
-                        <div class="information-container">
-                            <div class="information-icon">
-                                <img src="./images/contact/call.svg" style="width: 1.5rem;" alt="call-img" srcset="">
-                            </div>
-                            <div class="information-details">
-                                <p class="information-heading">Call Me</p>
-                                <p class="information-description">9883076596</p>
-                            </div>
-                        </div>
-                        <div class="information-container">
-                            <div class="information-icon">
-                                <img src="./images/contact/mail.svg" style="width: 1.5rem;" alt="mail-img" srcset="">
-                            </div>
-                            <div class="information-details">
-                                <p class="information-heading">Email</p>
-                                <p class="information-description">baunabuddhadev2001@gmail.com</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="message-me">
-                        <form action="">
-                            <div class="form-container">
-                                <input type="text" name="name" id="name" placeholder="Your Name..." autocomplete="off" required>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <i class="fa-solid fa-circle-exclamation"></i>
-                                <small>Error Msg</small>
-                            </div>
-                            <div class="form-container">
-                                <input type="email" name="email" id="email" placeholder="Your Email..." autocomplete="off" required>
-                                <i class="fa-solid fa-circle-check"></i>
-                                <i class="fa-solid fa-circle-exclamation"></i>
-                                <small>Error Msg</small>
-                            </div>
-                            <div id="last-div" class="form-container">
-                                <textarea name="message" id="message" cols="10" rows="3" placeholder="How Can I Help You?... " required></textarea>
-                                <small>Error Msg</small>
-                            </div>
-                            <input type="submit" value="Send Message" class="btn message-btn" name="">
-                        </form>
+                <div>
+                    <h3 class="greeting">Hi,</h3>
+                    <h1>I am <strong>Buddhadev</strong></h1>
+                    <em>a passionate programmer specializing in web development.</em>
+                    <div class="contact-and-cv">
+                        <a href="../HTML/contact.html">
+                            <button class="btn contact-btn">
+                                <span>Contact Me</span>
+                                <i class="fa-solid fa-address-book"></i>
+                            </button>
+                        </a>
+                        <!-- https://drive.google.com/file/d/18m57LqhAsxme48AOrYKOUmhq426w3BCd/view?usp=sharing -->
+                        <a class="btn cv-btn" href="https://drive.google.com/uc?export=download&id=18m57LqhAsxme48AOrYKOUmhq426w3BCd">
+                            <span>Download CV</span> 
+                            <i class="fa-solid fa-download"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -626,12 +120,6 @@
     </footer>
     <script src="./Javascript/header/top-navbar.js"></script>
     <script src="./Javascript/header/bottom-navabr.js"></script>
-    <script src="./Javascript/body/navigate-contact.js"></script>
-    <script src="./Javascript/body/skill.js"></script>
-    <script src="./Javascript/body/slider.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./Javascript/body/contact.js"></script>
 </body>
 
 </html>
