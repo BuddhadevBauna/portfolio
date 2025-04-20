@@ -4,8 +4,7 @@ let userData = {
     messege : ""
 }
 
-document.querySelector('form')
-.addEventListener('change', (e) => {
+document.querySelector('form').addEventListener('change', (e) => {
     let {name, value} = e.target;
     userData[name] = value;
 });
